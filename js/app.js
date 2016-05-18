@@ -6,7 +6,7 @@ $('button').click(function() {
 	var entry = parseInt(inputVal);
 	console.log(entry);
 
-var refactor = function(entry) {
+function refactor(entry) {
 
 	for(i = 1; i <= entry; i++) {
 		if(i % 3 === 0 && i % 5 === 0) {
