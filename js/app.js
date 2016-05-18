@@ -13,7 +13,7 @@ $('button').click(function() {
 function refactor(not) {
 
 if (not < 1) {
-      return "Enter a value greater than 1";
+      return "Enter a value greater than 1!";
     }
 
 var result = " ";
