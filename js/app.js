@@ -6,27 +6,34 @@ $('button').click(function() {
 	var entry = parseInt(inputVal);
 	console.log(entry);
 
-function refactor(entry) {
+	$('div').html(refactor(entry));
 
-	for(i = 1; i <= entry; i++) {
+});
+
+function refactor(not) {
+
+if (not < 1) {
+      return "Enter a value greater than 1";
+    }
+
+var result = " ";
+
+	for(i = 1; i <= not; i++) {
 		if(i % 3 === 0 && i % 5 === 0) {
-			console.log("fizzbuzz");
+			result += "fizzbuzz ";
 		}
 		else if (i % 3 === 0) {
-			console.log("fizz");
+			result += "fizz ";
 		}
 		else if (i % 5 === 0) {
-			console.log("buzz");
+			result += "buzz ";
 		}
 		else {
-			console.log(i);
+			result += i + " ";
 		}
 	}
-console.log(refactor);
-
+	return result;
 }
-
-})
 
 });
 
